@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { CartService } from '../cart.service';
 import { ProductsComponent } from '../products/products.component';
-import { Data } from '@angular/router';
 import{Product} from'../product.model'
 @Component({
   selector: 'app-add-product',
@@ -26,10 +25,8 @@ export class AddProductComponent implements OnInit {
 
  
      addProduct() {
-      // Push the new product to the products array
       this.Products.push(this.newProduct);
   
-      // Clear the form
       this.newProduct = new Product('', '', ' ');
     }
 
