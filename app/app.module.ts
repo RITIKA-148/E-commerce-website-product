@@ -9,7 +9,8 @@ import { CartComponent } from './cart/cart.component';
 import { ProductsComponent } from './products/products.component';
 import{HttpClientModule} from '@angular/common/http';
 import { AddProductComponent } from './add-product/add-product.component';
-import{FormsModule} from '@angular/forms'
+import{FormsModule} from '@angular/forms';
+import { PaymentComponent } from './payment/payment.component'
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import{FormsModule} from '@angular/forms'
     HeaderComponent,
     CartComponent,
     ProductsComponent,
-    AddProductComponent
+    AddProductComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

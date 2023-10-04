@@ -1,6 +1,6 @@
 <ng-container *ngIf="product.length!=0">
 
-<div class="container">
+<div class="container-fluid">
     <div class="card-table">
         <div class="cart-product">
             <div class="table table-responsive">
@@ -28,8 +28,10 @@
                         <td>
     
                             <button (click)="removeItem(item)"class="btn btn-danger">Delete</button>
+                            <button class="btn btn-success" style="  margin-left: 1%; margin-top: 6%;" routerLink="/pay">Checkout</button>
+
                         </td>
-    
+
                     </tr>
                 </tbody>
             </div>
